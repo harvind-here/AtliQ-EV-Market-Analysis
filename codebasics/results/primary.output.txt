@@ -1,0 +1,117 @@
+1. Top 3 and bottom 3 makers for 2-wheelers in FY 2023 and 2024:
+{2023: {'top_3': maker
+OLA ELECTRIC     152583
+OKINAWA           96945
+HERO ELECTRIC     88993
+Name: electric_vehicles_sold, dtype: int64, 'bottom_3': maker
+PURE EV     11556
+BEING       11018
+JITENDRA     8563
+Name: electric_vehicles_sold, dtype: int64}, 2024: {'top_3': maker
+OLA ELECTRIC    322489
+TVS             180743
+ATHER           107552
+Name: electric_vehicles_sold, dtype: int64, 'bottom_3': maker
+KINETIC GREEN      9585
+REVOLT             7254
+BATTRE ELECTRIC    4841
+Name: electric_vehicles_sold, dtype: int64}}
+
+2. Top 5 states with highest penetration rate in FY 2024:
+state
+Kerala        27.959755
+Goa           11.277148
+Karnataka      7.894095
+Delhi          6.981809
+Chandigarh     6.724859
+Name: penetration_rate, dtype: float64
+
+3. States with negative penetration from 2022 to 2024:
+['Andaman & Nicobar Island', 'Ladakh']
+
+4. Quarterly trends for top 5 EV makers (4-wheelers):
+fiscal_year          2022                    2023                     2024
+quarter                Q1    Q2    Q3    Q4    Q1    Q2    Q3    Q4     Q1     Q2     Q3     Q4
+maker
+BYD India               0     0     1    32    81   113   103   623    406    310    350    400
+Hyundai Motor          25    34    25    26    75   155   191   155    292    390    370    338
+MG Motor              285   798   411   153   531   635  1165   946   1493   2524   2190   2622
+Mahindra & Mahindra   355   651  1383  1653  2020  3164  3378  5243  10911   5855   4264   2316
+Tata Motors          1031  2052  3791  5834  5675  6192  6651  9528   7247  10337  13236  17361
+
+5. Compare EV sales and penetration rates in Delhi vs Karnataka for 2024:
+c:\Users\harvi\codebasics\main.py:66: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  fy_data['penetration_rate'] = fy_data['electric_vehicles_sold'] / fy_data['total_vehicles_sold'] * 100
+           electric_vehicles_sold  penetration_rate
+state
+Delhi                       46724          6.981809
+Karnataka                  160989          7.894095
+
+6. CAGR for top 5 4-wheeler makers from 2022 to 2024:
+maker
+BYD India              5.665151
+Hyundai Motor          2.554766
+MG Motor               1.315309
+Mahindra & Mahindra    1.403301
+Tata Motors            0.947150
+dtype: float64
+
+7. Top 10 states with highest CAGR in total vehicles sold from 2022 to 2024:
+state
+Meghalaya            0.284691
+Goa                  0.274102
+Karnataka            0.252836
+Delhi                0.228843
+Rajasthan            0.214974
+Gujarat              0.205457
+Assam                0.201337
+Mizoram              0.187716
+Arunachal Pradesh    0.183034
+Haryana              0.176804
+dtype: float64
+
+8. Peak and low season months for EV sales:
+{'peak_month': 3, 'low_month': 6}
+
+9. Projected EV sales for top 10 states by penetration rate in 2030:
+10:35:29 - cmdstanpy - INFO - Chain [1] start processing
+10:35:29 - cmdstanpy - INFO - Chain [1] done processing
+10:35:30 - cmdstanpy - INFO - Chain [1] start processing
+10:35:30 - cmdstanpy - INFO - Chain [1] done processing
+10:35:30 - cmdstanpy - INFO - Chain [1] start processing
+10:35:30 - cmdstanpy - INFO - Chain [1] done processing
+10:35:30 - cmdstanpy - INFO - Chain [1] start processing
+10:35:30 - cmdstanpy - INFO - Chain [1] done processing
+10:35:31 - cmdstanpy - INFO - Chain [1] start processing
+10:35:31 - cmdstanpy - INFO - Chain [1] done processing
+10:35:31 - cmdstanpy - INFO - Chain [1] start processing
+10:35:31 - cmdstanpy - INFO - Chain [1] done processing
+10:35:31 - cmdstanpy - INFO - Chain [1] start processing
+10:35:32 - cmdstanpy - INFO - Chain [1] done processing
+10:35:32 - cmdstanpy - INFO - Chain [1] start processing
+10:35:32 - cmdstanpy - INFO - Chain [1] done processing
+10:35:32 - cmdstanpy - INFO - Chain [1] start processing
+10:35:32 - cmdstanpy - INFO - Chain [1] done processing
+10:35:32 - cmdstanpy - INFO - Chain [1] start processing
+10:35:33 - cmdstanpy - INFO - Chain [1] done processing
+Kerala          12592.962810
+Goa              1243.535442
+Karnataka       19127.678722
+Delhi            7210.983840
+Chandigarh        692.825152
+Maharashtra     28247.670819
+Odisha           6128.757326
+Tamil Nadu      10381.177411
+Chhattisgarh     4351.592008
+Gujarat         15215.932483
+dtype: float64
+
+10. Revenue growth rate for 2-wheelers and 4-wheelers:
+                  2022 vs 2024  2023 vs 2024
+vehicle_category
+2-Wheelers          269.276209     28.134106
+4-Wheelers          367.788125     83.084378

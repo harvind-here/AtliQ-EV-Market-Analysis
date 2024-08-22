@@ -1,0 +1,26 @@
+Top 5 states by 4-wheeler EV sales (2023-2024):
+state
+Maharashtra    25809
+Karnataka      18833
+Delhi          15857
+Kerala         14233
+Gujarat        10569
+Name: electric_vehicles_sold, dtype: int64
+
+Top 5 states by 4-wheeler EV penetration rate (2023-2024):
+state
+Kerala        22.340129
+Delhi          3.973283
+Goa            3.825174
+Chandigarh     3.319532
+Karnataka      3.168542
+Name: penetration_rate, dtype: float64
+
+Top 5 4-wheeler EV manufacturers (2023-2024):
+maker
+Tata Motors            57709
+Mahindra & Mahindra    28589
+MG Motor                9775
+BYD India               2089
+PCA Automobiles         1684
+Name: electric_vehicles_sold, dtype: int64
