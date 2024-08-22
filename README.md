@@ -1,4 +1,4 @@
-## Detailed Market Analysis Report for AtliQ Motors' Expansion into the Indian EV Market
+## Detailed Market Analysis into the Indian EV Market
 
 The Indian EV market presents a dynamic and rapidly evolving landscape. By strategically targeting high-growth regions, investing in charging infrastructure, and leveraging government incentives, AtliQ Motors can significantly enhance its market presence and capture a larger share of this burgeoning market.  
 This repository contains the codes, graphs, and analysis performed for EV vehicle market trends in India as of June 2024.
